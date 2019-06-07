@@ -8,3 +8,4 @@ endif
 let hubcap_loaded = 1
 
 command! -nargs=1 -complete=customlist,hubcap#complete#branches Gco !git checkout <args>
+command! -nargs=* -complete=customlist,hubcap#complete#pull_requests Gprb call hubcap#browse#pull_request(<f-args>)
