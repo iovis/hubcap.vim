@@ -6,3 +6,5 @@ if exists('hubcap_loaded') || v:version < 700
   finish
 endif
 let hubcap_loaded = 1
+
+command! -nargs=1 -complete=customlist,hubcap#complete#branches Gco !git checkout <args>
