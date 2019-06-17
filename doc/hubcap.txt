@@ -1,0 +1,54 @@
+*hubcap.txt*  Interact with hub from Vim
+
+Author:  David Marchante <https://github.com/iovis>
+License: Same terms as Vim itself (see |license|)
+Version: 1.0 (2019-06-17)
+
+This plugin is only available if 'compatible' is not set.
+
+==============================================================================
+CONTENTS                                                     *hubcap-contents*
+
+    1. Usage ................ |hubcap-usage|
+    2. Bugs ................. |hubcap-bugs|
+    3. Changelog ............ |hubcap-changelog|
+
+==============================================================================
+USAGE                                                           *hubcap-usage*
+
+                                                                       *:Gprs*
+:Gprs
+                      List active Pull Requests.
+
+                                                                       *:Gprc*
+:Gprc [PR]
+                      Checkout [PR] locally.
+
+                      [PR] can be:
+                        - The PR number: 123
+                        - Number and hash sign: #123
+                        * Anything else after is ignored
+
+                                                                       *:Gprb*
+:Gprb [PR]
+                      Browse [PR] in GitHub.
+
+                      If no [PR] is given, it'll try to find PRs open
+                      for the current branch.
+
+                                                                        *:Gco*
+:Gco [branch]
+                      Checkout local [branch].
+>
+==============================================================================
+BUGS                                                             *hubcap-bugs*
+
+Report any issues to https://github.com/iovis/hubcap.vim/issues
+
+==============================================================================
+CHANGELOG                                                   *hubcap-changelog*
+
+Version 1.0: 2019-06-17
+  - Initial release
+
+vim:tw=78:ts=8:ft=help:norl:
